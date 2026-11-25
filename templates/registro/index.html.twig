@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Registro de usuario</h1>
+
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_row(form.nombre) }}
+    {{ form_row(form.apellidos) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.username) }}
+    {{ form_row(form.password) }}
+    {{ form_row(form.condiciones) }}
+    {{ form_row(form.registrar) }}
+    {{ form_end(form) }}
+
+    <a href="{{ path('app_login') }}"><button type="button">← Volver al login</button></a>
+{% endblock %}
