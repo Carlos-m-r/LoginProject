@@ -18,7 +18,7 @@ final class LoginController extends AbstractController
         'user56' => '2026',
     ];
 
-    #[Route('/', name: 'app_inicio')]
+    #[Route('/', name: 'app_default')]
     #[Route('/login', name: 'app_login')]
     public function login(Request $request, RequestStack $requestStack): Response
     {
